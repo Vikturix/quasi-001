@@ -1,0 +1,6 @@
+task main ()
+{
+ SetSensor(IN_2, SENSOR_TOUCH);
+ while (SENSOR_2 == 0);
+ PlaySound(SOUND_CLICK);
+}

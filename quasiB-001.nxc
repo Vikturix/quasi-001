@@ -1,0 +1,22 @@
+task main ()
+{
+ SetSensorLowspeed(IN_1);
+ while (true)
+ {
+  // walk forward
+  OnFwdReg(OUT_A,35,OUT_REGMODE_SPEED);
+  // wait for an obstacle to come near
+  while (SensorUS(IN_1)>20);
+  // stop walking
+  Off(OUT_A);
+  Wait(2000);
+  // walk backward
+  OnRevReg(OUT_A,35,OUT_REGMODE_SPEED);
+  // wait for the obstacle to get far
+  while (SensorUS(IN_1)<30);
+  // stop walking
+  Off(OUT_A);
+  Wait(2000);
+  }
+}
+

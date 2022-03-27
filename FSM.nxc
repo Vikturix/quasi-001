@@ -1,0 +1,63 @@
+task main ()
+{
+ SetSensorLowspeed(IN_1);
+ SetSensor(IN_2,SENSOR_TOUCH);
+ short press = 0;
+ short distance;
+ short state = 0;
+}
+task Monitor ()
+{
+ Follows(main);
+ while (true)
+ {
+  press = SENSOR_2;
+  distance = SensorUs(IN_1);
+ }
+}
+task FSM ()
+{
+ Follows(main);
+ while (true)
+ {
+  switch (state)
+  {
+   case STATE_ONE:
+    Wait(10);
+    if (press == 0)
+    {
+     state = 0;
+    } else if ((press == 1) && (distance < 16))
+    {
+     state = 2;
+    } else if ((press == 1) && (distance > 15))
+    {
+     state = 1;
+    }
+   case STATE_TWO:
+    // walk forwards 1 step
+    if (press == 0)
+    {
+     state = 0;
+    } else if ((press == 1) && (distance < 16))
+    {
+     state = 2;
+    } else if ((press == 1) && (distance > 15))
+    {
+     state = 1;
+    }
+   case STATE_THREE:
+    // walk backwards 1 step
+    if (press == 0)
+    {
+     state = 0;
+    } else if ((press == 1) && (distance < 16))
+    {
+     state = 2;
+    } else if ((press == 1) && distance > 15)
+    {
+     state = 3;
+    }
+  }
+ }
+}

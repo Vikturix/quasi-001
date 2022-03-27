@@ -1,0 +1,284 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__CLSCSMutex3	9	0	0	4	2
+1	__DU0SetSensorLowspeed_inline_main	5	1	4	4	2
+2	__D0SetSensorLowspeed_inline_main	6	1	8	4	3
+3	__signed_stack_001main	6	1	12	4	10
+4	__CLSWMutex3	9	0	16	4	2
+5	__CLSRMutex3	9	0	20	4	2
+6	__D0main	6	1	24	4	18
+7	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	28	4	2
+8	__RLSBmutex3	9	0	32	4	4
+9	__PFTmp	1	1	36	1	1
+10	__constVal7	2	0	37	1	2
+11	__zfSetSensorLowspeed_inline_main	1	1	38	1	2
+12	__zfmain	1	1	39	1	8
+13	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	40	1	2
+14	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	41	1	2
+15	__constVal63	2	0	42	1	3
+16	__constVal96	2	0	43	1	3
+17	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	44	1	2
+18	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_main	1	1	45	1	4
+19	____initialize_global_data_return	1	1	46	1	3
+20	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	47	1	2
+21	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main	1	1	48	1	2
+22	__constVal3	2	0	49	1	1
+23	__constVal15	2	0	50	1	5
+24	____ReadLSBytes3_return	1	1	51	1	4
+25	____ResetSensorSubroutine_return	1	1	52	1	3
+26	__ResetSensorTmp	1	1	53	1	2
+27	__ResetSensorPort	1	1	54	1	3
+28	__constVal0	2	1	55	1	12
+29	__RLSBytesCount3	1	1	56	1	8
+30	__RLSBIterations3	1	1	57	1	4
+31	__OnRev_Tmp	2	1	58	1	2
+32	__constVal1	2	0	59	1	3
+33	__RLSBResult3	2	1	60	1	7
+34	__constVal32	2	0	61	1	9
+35	__CLSRArgs3	8	0	4	12	5
+36	__CLSRArgs3.Result	2	1	64	1	5
+37	__CLSRArgs3.Port	1	1	65	1	5
+38	__CLSRArgs3.Buffer	7	0	66	4	5
+39	__CLSRArgs3.Buffer.Buffer_type	1	0	0	1	0
+40	__CLSRArgs3.BufferLen	1	1	68	1	5
+41	__SPFArgs	8	0	4	12	4
+42	__SPFArgs.Result	2	1	72	1	4
+43	__SPFArgs.Filename	7	0	74	4	4
+44	__SPFArgs.Filename.Filename_type	1	0	0	1	0
+45	__SPFArgs.Loop	1	1	76	1	4
+46	__SPFArgs.Volume	1	1	77	1	4
+47	__CLSCSArgs3	8	0	3	4	4
+48	__CLSCSArgs3.Result	2	1	80	1	4
+49	__CLSCSArgs3.Port	1	1	81	1	4
+50	__CLSCSArgs3.BytesReady	1	1	82	1	4
+51	__CLSWArgs3	8	0	4	12	5
+52	__CLSWArgs3.Result	2	1	84	1	5
+53	__CLSWArgs3.Port	1	1	85	1	5
+54	__CLSWArgs3.Buffer	7	0	86	4	5
+55	__CLSWArgs3.Buffer.Buffer_type	1	0	0	1	0
+56	__CLSWArgs3.ReturnLen	1	1	88	1	5
+57	__constStr0009	7	0	90	4	1
+58	__constStr0009.__constStr0009_type	1	1	0	1	0
+59	__RLSReadBuf3	7	0	92	4	10
+60	__RLSReadBuf3.__RLSReadBuf3_type	1	0	0	1	0
+61	__RLSBbufLSWrite1	7	0	94	4	2
+62	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
+63	__strbufmain	7	0	96	4	2
+64	__strbufmain.__strbufmain_type	1	0	0	1	0
+65	__RLSLastGoodRead3	7	0	98	4	2
+66	__RLSLastGoodRead3.__RLSLastGoodRead3_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	2	0	#line 2 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	3	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	2	2	#line 2 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	2	2	#line 2 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	3	2		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main, 3
+0	2	5	#line 2 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	3	5	#line 3 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	4	5		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main, __constVal1
+0	3758	7	#line 3758 "NXCDefs.h"
+0	3759	7		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	3758	9	#line 3758 "NXCDefs.h"
+0	3758	9	#line 3758 "NXCDefs.h"
+0	3759	9		mov __DU0SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main
+0	3758	11	#line 3758 "NXCDefs.h"
+0	3759	11		tst 5, __zfSetSensorLowspeed_inline_main, __DU0SetSensorLowspeed_inline_main
+0	3758	14	#line 3758 "NXCDefs.h"
+0	3759	14		brtst 4, __004__NXC_Label_36, __zfSetSensorLowspeed_inline_main
+0	3758	17	#line 3758 "NXCDefs.h"
+0	3759	17		set __D0SetSensorLowspeed_inline_main, 11
+0	3758	20	#line 3758 "NXCDefs.h"
+0	3759	20		jmp __004__NXC_Label_37
+0	3758	22	#line 3758 "NXCDefs.h"
+0	3759	22		set __D0SetSensorLowspeed_inline_main, 10
+0	3758	25	#line 3758 "NXCDefs.h"
+0	3759	25		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main, __D0SetSensorLowspeed_inline_main
+0	3663	27	#line 3663 "NXCDefs.h"
+0	3664	27		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, 0
+0	3663	31	#line 3663 "NXCDefs.h"
+0	3759	31	#line 3759 "NXCDefs.h"
+0	3759	31	#line 3759 "NXCDefs.h"
+0	3760	31		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	3759	33	#line 3759 "NXCDefs.h"
+0	3759	33	#line 3759 "NXCDefs.h"
+0	3760	33		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main, 0
+0	3759	36	#line 3759 "NXCDefs.h"
+0	3676	36	#line 3676 "NXCDefs.h"
+0	3677	36		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, 1
+0	3676	40	#line 3676 "NXCDefs.h"
+0	3760	40	#line 3760 "NXCDefs.h"
+0	3760	40	#line 3760 "NXCDefs.h"
+0	3760	40	#line 3760 "NXCDefs.h"
+0	3694	40	#line 3694 "NXCDefs.h"
+0	3695	40	#pragma macro 4
+0	3695	40		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	3695	42		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	3655	44	#line 3655 "NXCDefs.h"
+0	3694	44	#line 3694 "NXCDefs.h"
+0	3761	44	#line 3761 "NXCDefs.h"
+0	3	44	#line 3 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	4	44	#line 4 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	5	44		set __D0main, 1
+0	6	47	#line 6 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	7	47		tst 5, __zfmain, __D0main
+0	6	50	#line 6 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	7	50		brtst 4, __NXC_Label_492, __zfmain
+0	6	53	#line 6 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	7	53		set __signed_stack_001main, 55
+0	6	56	#line 6 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	6	56	#line 6 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	7	56		set __D0main, 1
+0	8	59	#line 8 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	9	59	#pragma macro 7
+0	9	59		setout __constVal0, 2, __signed_stack_001main, 1, __constVal7, 8, __D0main, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3679	82	#line 3679 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	8	82	#line 8 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	8	82	#line 8 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	9	82	#pragma macro 26
+0	9	82		acquire __RLSBmutex3
+0	9	83		mov __RLSReadBuf3, __RLSBbufLSWrite1
+0	9	85		set __RLSBytesCount3, 1
+0	9	88		wait2 NA, __constVal15
+0	9	91		subcall __ReadLSBytes3, ____ReadLSBytes3_return
+0	9	93		index __D0main, __RLSReadBuf3, 65535
+0	9	97		release __RLSBmutex3
+0	3683	98	#line 3683 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	8	98	#line 8 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	9	98		mov __signed_stack_001main, __D0main
+0	8	100	#line 8 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	9	100		set __D0main, 20
+0	8	103	#line 8 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	9	103		cmp 0, __zfmain, __signed_stack_001main, __D0main
+0	8	107	#line 8 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	9	107		mov __D0main, __zfmain
+0	10	109	#line 10 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	11	109		brtst 4, __NXC_Label_500, __zfmain
+0	10	112	#line 10 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	10	112	#line 10 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	11	112		jmp __NXC_Label_499
+0	10	114	#line 10 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	12	114	#line 12 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	13	114	#pragma macro 7
+0	13	114		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3702	137	#line 3702 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	12	137	#line 12 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	12	137	#line 12 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	13	137		strcat __strbufmain, __constStr0009
+0	12	141	#line 12 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	13	141		set __signed_stack_001main, 4
+0	12	144	#line 12 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	12	144	#line 12 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	13	144		set __D0main, 0
+0	13	147	#line 13 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	13	147	#line 13 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	14	147		mov __SPFArgs.Filename, __strbufmain
+0	13	149	#line 13 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	14	149		mov __SPFArgs.Volume, __signed_stack_001main
+0	13	151	#line 13 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	14	151		mov __SPFArgs.Loop, __D0main
+0	13	153	#line 13 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	14	153		syscall 9, __SPFArgs
+0	13	156	#line 13 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	13	156	#line 13 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	13	156	#line 13 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	13	156	#line 13 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	14	156		set __Wait_7qG2_ms_7qG2_000_inline_main, 800
+0	13	159	#line 13 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	7921	159	#line 7921 "NXCDefs.h"
+0	7922	159		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	162	#line 7921 "NXCDefs.h"
+0	15	162	#line 15 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	15	162	#line 15 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	16	162		set __signed_stack_001main, 55
+0	15	165	#line 15 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	15	165	#line 15 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	16	165		set __D0main, 1
+0	17	168	#line 17 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	18	168	#pragma macro 10
+0	18	168		neg __OnRev_Tmp, __signed_stack_001main
+0	18	171		setout __constVal0, 2, __OnRev_Tmp, 1, __constVal7, 8, __D0main, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3756	194	#line 3756 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	17	194	#line 17 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	17	194	#line 17 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	18	194	#pragma macro 26
+0	18	194		acquire __RLSBmutex3
+0	18	195		mov __RLSReadBuf3, __RLSBbufLSWrite1
+0	18	197		set __RLSBytesCount3, 1
+0	18	200		wait2 NA, __constVal15
+0	18	203		subcall __ReadLSBytes3, ____ReadLSBytes3_return
+0	18	205		index __D0main, __RLSReadBuf3, 65535
+0	18	209		release __RLSBmutex3
+0	3760	210	#line 3760 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	17	210	#line 17 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	18	210		mov __signed_stack_001main, __D0main
+0	17	212	#line 17 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	18	212		set __D0main, 30
+0	17	215	#line 17 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	18	215		cmp 1, __zfmain, __signed_stack_001main, __D0main
+0	17	219	#line 17 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	18	219		mov __D0main, __zfmain
+0	18	221	#line 18 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	19	221		brtst 4, __NXC_Label_514, __zfmain
+0	18	224	#line 18 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	18	224	#line 18 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	19	224		jmp __NXC_Label_513
+0	18	226	#line 18 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	21	226	#line 21 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	22	226		jmp __NXC_Label_491
+0	21	228	#line 21 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+0	22	228		exit -1, -1
+1	4885	0		setin __constVal1, __ResetSensorPort, 5
+1	4887	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	4888	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	4889	11		subret ____ResetSensorSubroutine_return
+2	5784	0	#pragma macro 25
+2	5784	0		acquire __CLSWMutex3
+2	5784	1		set __CLSWArgs3.Port, 3
+2	5784	4		mov __CLSWArgs3.ReturnLen, __RLSBytesCount3
+2	5784	6		mov __CLSWArgs3.Buffer, __RLSReadBuf3
+2	5784	8		syscall 21, __CLSWArgs3
+2	5784	11		mov __RLSBResult3, __CLSWArgs3.Result
+2	5784	13		release __CLSWMutex3
+2	5784	14	#line 5784 "NXTDefs.h"
+2	5785	14		brtst 4, __RLSBReturn3, __RLSBytesCount3
+2	5786	17		arrinit __RLSReadBuf3, __constVal0, __RLSBytesCount3
+2	5787	21		brtst 5, __RLSBError3, __RLSBResult3
+2	5788	24		set __RLSBIterations3, 4
+2	5790	27	#pragma macro 23
+2	5790	27		acquire __CLSCSMutex3
+2	5790	28		set __CLSCSArgs3.Port, 3
+2	5790	31		syscall 23, __CLSCSArgs3
+2	5790	34		mov __RLSBytesCount3, __CLSCSArgs3.BytesReady
+2	5790	36		mov __RLSBResult3, __CLSCSArgs3.Result
+2	5790	38		release __CLSCSMutex3
+2	5790	39	#line 5790 "NXTDefs.h"
+2	5791	39		sub __RLSBIterations3, __RLSBIterations3, __constVal1
+2	5792	43		brtst 2, __RLSBError3, __RLSBIterations3
+2	5793	46		brtst 0, __RLSBError3, __RLSBResult3
+2	5794	49		brtst 4, __RLSBReadyToRead3, __RLSBResult3
+2	5796	52		wait2 NA, __constVal15
+2	5797	55		jmp __RLSBDoCheckStatus3
+2	5800	57	#pragma macro 25
+2	5800	57		acquire __CLSRMutex3
+2	5800	58		set __CLSRArgs3.Port, 3
+2	5800	61		mov __CLSRArgs3.BufferLen, __RLSBytesCount3
+2	5800	63		syscall 22, __CLSRArgs3
+2	5800	66		mov __RLSReadBuf3, __CLSRArgs3.Buffer
+2	5800	68		mov __RLSBResult3, __CLSRArgs3.Result
+2	5800	70		release __CLSRMutex3
+2	5800	71	#line 5800 "NXTDefs.h"
+2	5801	71		brtst 5, __RLSBError3, __RLSBResult3
+2	5802	74		mov __RLSLastGoodRead3, __RLSReadBuf3
+2	5803	76		jmp __RLSBDone3
+2	5805	78		mov __RLSReadBuf3, __RLSLastGoodRead3
+2	5807	80		arrsize __RLSBytesCount3, __RLSReadBuf3
+2	5809	83		subret ____ReadLSBytes3_return
+3	22	0	#line 22 "C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc"
+3	23	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc
+1	__ResetSensorSubroutine	231	NXTDefs.h
+2	__ReadLSBytes3	244	NXTDefs.h
+3	__initialize_global_data	329	C:\Users\Radical Edward\Documents\LEGORob\quasiB-001.nxc
