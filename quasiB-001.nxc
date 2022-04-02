@@ -6,14 +6,14 @@ task main ()
   // walk forward
   OnFwdReg(OUT_A,35,OUT_REGMODE_SPEED);
   // wait for an obstacle to come near
-  while (SensorUS(IN_1)>20);
+  while (SensorUS(IN_1)>15);
   // stop walking
   Off(OUT_A);
   Wait(2000);
   // walk backward
   OnRevReg(OUT_A,35,OUT_REGMODE_SPEED);
   // wait for the obstacle to get far
-  while (SensorUS(IN_1)<30);
+  while (SensorUS(IN_1)<35);
   // stop walking
   Off(OUT_A);
   Wait(2000);

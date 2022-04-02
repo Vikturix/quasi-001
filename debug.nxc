@@ -1,6 +1,4 @@
-task main ()
+task main () 
 {
- SetSensor(IN_2, SENSOR_TOUCH);
- while (SENSOR_2 == 0);
- PlaySound(SOUND_CLICK);
+    RotateMotor(OUT_A, 40, 540);        // successfully takes exactly one step (with specific hardware)
 }

@@ -1,63 +1,81 @@
-task main ()
+// initialise variables
+int press = 0;
+int distance = 0;
+string state = "State_One";
+
+task main ()                    
 {
- SetSensorLowspeed(IN_1);
+    // initialize sensors (i.e. ultrasonic for 1 and touch for 2)
+ SetSensorType(IN_1, SENSOR_TYPE_LOWSPEED_9V);
  SetSensor(IN_2,SENSOR_TOUCH);
- short press = 0;
- short distance;
- short state = 0;
 }
+
 task Monitor ()
 {
- Follows(main);
+    // monitors sensors and updates variables
+ Follows(main); // runs simultaneously with FSM
  while (true)
  {
+    // constantly running, updating variables
   press = SENSOR_2;
-  distance = SensorUs(IN_1);
+  distance = SensorUS(IN_1);
+  ClearScreen();
+  NumOut(20, 8, press);       // displays data for debugging
+  NumOut(20, 24, distance);   //          ''
+  TextOut(20, 40, state);     //          ''
+  Wait(185);
  }
 }
+
+
 task FSM ()
 {
- Follows(main);
+ Follows(main); // runs simultaneously with Monitor, main logical structure
  while (true)
  {
-  switch (state)
+  switch (state)    // finite state machine time
   {
-   case STATE_ONE:
-    Wait(10);
-    if (press == 0)
-    {
-     state = 0;
-    } else if ((press == 1) && (distance < 16))
-    {
-     state = 2;
-    } else if ((press == 1) && (distance > 15))
-    {
-     state = 1;
+
+   case "State_One":
+    // inactive
+    Wait(200);
+    
+    if (press == 0) {
+     state = "State_One";   // should happen always if not pressing
+    } else if ((press == 1) && (distance > 20)) {
+     state = "State_Two";   // should happen if pressing and far from obstacle
+    } else if ((press == 1) && (distance <= 20)) {
+     state = "State_Three"; // should happen if pressing and close to obstacle
     }
-   case STATE_TWO:
-    // walk forwards 1 step
-    if (press == 0)
-    {
-     state = 0;
-    } else if ((press == 1) && (distance < 16))
-    {
-     state = 2;
-    } else if ((press == 1) && (distance > 15))
-    {
-     state = 1;
+    break;
+
+   case "State_Two":
+    // forwards
+    RotateMotor(OUT_A, 45, 540);    // walk forwards 1 step
+
+    // if statement same as above
+    if (press == 0) {
+     state = "State_One";
+    } else if ((press == 1) && (distance > 20)) {
+     state = "State_Two";
+    } else if ((press == 1) && (distance <= 20)) {
+     state = "State_Three";
     }
-   case STATE_THREE:
-    // walk backwards 1 step
-    if (press == 0)
-    {
-     state = 0;
-    } else if ((press == 1) && (distance < 16))
-    {
-     state = 2;
-    } else if ((press == 1) && distance > 15)
-    {
-     state = 3;
+    break;
+
+   case "State_Three":
+   // backwards
+    RotateMotor(OUT_A, -45, 540);   // walk backwards 1 step
+
+    // if statement same as above
+    if (press == 0) {
+     state = "State_One";
+    } else if ((press == 1) && (distance > 20)) {
+     state = "State_Two";
+    } else if ((press == 1) && distance <= 20) {
+     state = "State_Three";
     }
+    break;
   }
  }
 }
