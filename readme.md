@@ -8,7 +8,7 @@ FSM is the main project, and quasiB-001 is a basic walk cycle that operates on d
 
 ## Quasimodo walk
 
-https://user-images.githubusercontent.com/183669/161541743-a992264b-3e47-4db5-a570-17352374020f.mP4
+https://user-images.githubusercontent.com/183669/161550652-cf3bbd8e-82a8-4450-a3bc-47b8bd168efd.mp4
 
 This implements a basic finite state machine.
 1. State-1 be still 
@@ -23,6 +23,10 @@ This implements a basic finite state machine.
 > In version 0.1 this results in a sort of a tedious dance if the obstacle remains there :) 
 
 States distance and button state are displayed on screen.
+
+
+
+
 
 
 
